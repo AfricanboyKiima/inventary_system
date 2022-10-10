@@ -7,10 +7,25 @@
 </head>
 <body>
 <div class ="container text-center">
-    <div> <h1>Bienvenu à notre application d'inventaire</h1> </div>
-<div>
-    <a class="2" th:href="@{/categories}">List Categories</a>
+    <div> <h1>Bienvenu notre application d'inventaire</h1> </div>
+<div class="p-2">
+    <a class="h2" th:href="@{/categories}">List Categories</a>
 </div>
+    <div class="p-2">
+        <a class="h2" th:href="@{/categories/new}">Créer une Categorie</a>
+    </div>
+    <div class="p-2">
+        <a class="h2" th:href="@{/products}">List de Produits</a>
+    </div>
+    <div class="p-2">
+        <a class="h2" th:href="@{/products/new}">Créer un Produits</a>
+    </div>
+    <div class="p-2">
+        <a class="h2" th:href="@{/brands}">List de Brands </a>
+    </div>
+    <div class="p-2">
+        <a class="h2" th:href="@{/brands/new}">Créer un Brand</a>
+    </div>
 </div>
 </body>
 </html>
