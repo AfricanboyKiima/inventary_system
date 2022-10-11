@@ -8,10 +8,11 @@
 <body>
 <div class ="container text-center">
     <div th:if="${product.id == null}"> <h1>Créer une nouvelle Produit</h1> </div>
-    <div th:unless="${product.id == null}"> <h1>Edit Product</h1> </div>
+    <div th:unless="${product.id == null}"> <h1>Modifier Product</h1> </div>
 
     <form th:action="@{/products/save}" th:object="${product}" method="post"
     style="max-width:600px; margin: 0 auto;">
+        <input type="hidden"  th:field ="*{id}"th:value="${product.id}"/>
         <div class="m-3">
             <div class="form-group row">
                 <label class="col-form-label col-sm-4"> Product Name:</label>

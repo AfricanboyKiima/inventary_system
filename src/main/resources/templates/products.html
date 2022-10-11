@@ -15,6 +15,7 @@
             <th>Name</th>
                 <th>Price</th>
                 <th>Category</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -26,7 +27,7 @@
         <td>[[${product.category.name}]]</td>
         <td>
 
-        <a th:href="@{'/products/edit/' + ${product.id}}"></a>
+        <a th:href="@{'/products/edit/' + ${product.id}}">Modifier</a>
             <a th:href="@{'/products/delete/' + ${product.id}}">Supprimer</a>
             </td>
     </tr>

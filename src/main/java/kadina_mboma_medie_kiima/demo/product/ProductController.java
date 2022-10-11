@@ -49,10 +49,10 @@ public class ProductController {
     public String showEditProductForm(@PathVariable("id") Integer id, Model model){
         Product product =  productRepo.findById(id).get();
         model.addAttribute("product", product);
+
         List<Category> listCategories = categoryRepo.findAll();
 
-        model.addAttribute("product", new Product());
-        model.addAttribute("listCategories",listCategories );
+        model.addAttribute("listCategories",listCategories);
         return "product_form";
     }
 
