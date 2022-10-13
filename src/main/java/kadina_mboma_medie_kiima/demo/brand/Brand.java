@@ -15,7 +15,8 @@ public class Brand {
     @Column(length = 45, nullable = false,unique = true)
     private String name;
 
-    @OneToMany(mappedBy = "brand")
+    @OneToMany
+    @JoinColumn(name = "brand_id")
     private List <Category> categories = new ArrayList<>();
 
     public Integer getId() {
