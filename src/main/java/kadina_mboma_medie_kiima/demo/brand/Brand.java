@@ -13,7 +13,7 @@ public class Brand {
     private Integer id;
 
     @Column(length = 45, nullable = false,unique = true)
-    private String name;
+    private String name;//nom
 
     @OneToMany
     @JoinColumn(name = "brand_id")
