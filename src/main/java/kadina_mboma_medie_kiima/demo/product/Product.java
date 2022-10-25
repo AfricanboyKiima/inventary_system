@@ -6,7 +6,7 @@ import kadina_mboma_medie_kiima.demo.Category.Category;
 import javax.persistence.*;
 
 @Entity
-public class Product {
+public class Product {//produit
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
